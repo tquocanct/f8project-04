@@ -1,0 +1,31 @@
+* {
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #000958;
+    --sub-color: #ff5b2e;
+    --text--color: #656689;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* common */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    border: none;
+}

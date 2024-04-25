@@ -40,7 +40,6 @@ button {
 .btn {
     border-radius: 31px;
     border: 1px solid var(--sub-color);
-    width: 56px;
     color: #ff5b2e;
     text-align: center;
     font-family: Poppins;
@@ -97,6 +96,7 @@ button {
 }
 
 .hero-media {
+    position: relative;
     display: flex;
 }
 
@@ -138,4 +138,121 @@ button {
     height: 244px;
     left: -20px;
     bottom: -58px;
+}
+
+.hero__info {
+    position: absolute;
+    bottom: -94px;
+    left: 130px;
+    width: 250px;
+    height: 156px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+}
+
+.hero__info-container {
+    margin: 18px 14px;
+}
+
+.hero__item {
+    display: flex;
+}
+.hero__item-wrap {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #fec23f;
+}
+
+.hero__item-img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.hero__item-br {
+    width: 222px;
+    height: 2px;
+    background: #f2f2f2;
+    margin: 21px auto;
+}
+
+.hero__item-inner {
+    margin-left: 9px;
+}
+
+.hero__item-name {
+    color: var(--primary-color);
+    margin-top: 2px;
+    font-family: Sora;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.hero__item-br-top,
+.hero__item-br-bot {
+    width: 118px;
+    height: 4px;
+    margin: 7px 0;
+    border-radius: 10px;
+    opacity: 0.08;
+    background: #000958;
+}
+.hero__item-br-bot {
+    width: 39px;
+}
+
+.hero__content {
+    margin: 71px 0 0 120px;
+}
+.hero__content-title {
+    margin-bottom: 24px;
+    width: 517px;
+    color: var(--primary-color);
+    font-family: Sora;
+    font-size: 66px;
+    font-weight: 800;
+    line-height: 76px; /* 115.152% */
+}
+
+.hero__content-desc {
+    width: 391px;
+    color: var(--text--color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+}
+
+.hero__content-row {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__btn {
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 189px;
+    height: 60px;
+    flex-shrink: 0;
+    background-color: var(--sub-color);
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+.hero__btn-text {
+    margin: 0 10px 0 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.hero_content-link {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 500; 
+    text-decoration-line: underline;
 }

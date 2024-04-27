@@ -474,3 +474,69 @@ button {
     line-height: 1; /* 100% */
     text-decoration: underline;
 }
+
+/* services */
+
+.services {
+    margin-top: 65px;
+    background: #fff6ed;
+}
+
+.services__desc {
+    padding-top: 65px;
+    margin-bottom: 15px;
+    color: #5e6085;
+    text-align: center;
+    font-family: Sora;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.services__title {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: Sora;
+    font-size: 5.2rem;
+    font-weight: 700;
+    margin-bottom: 71px;
+}
+.services__list {
+    display: grid;
+    grid-template-columns: 294px 447px 294px;
+    grid-template-rows: 200px 200px 200px;
+    gap: 24px 71px;
+    grid-template-areas:
+        "grid__item-1 grid__image grid__item-2"
+        "grid__item-3 grid__image grid__item-4"
+        "grid__item-5 grid__image grid__item-6";
+}
+
+.grid__item-1 {
+    grid-area: grid__item-1;
+}
+.grid__item-2 {
+    grid-area: grid__item-2;
+}
+.grid__item-3 {
+    grid-area: grid__item-3;
+}
+.grid__item-4 {
+    grid-area: grid__item-4;
+}
+.grid__item-5 {
+    grid-area: grid__item-5;
+}
+.grid__item-6 {
+    grid-area: grid__item-6;
+}
+.grid__image {
+    grid-area: grid__image;
+}
+
+.services__item {
+    width: 294px;
+    height: 208px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    background: #fff;
+}

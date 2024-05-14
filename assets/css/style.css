@@ -33,6 +33,14 @@ button {
     background: none;
 }
 
+.title {
+    color: var(--primary-color);
+    font-family: Sora;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 62px; /* 119.231% */
+}
+
 .container {
     width: 1170px;
     margin: 0 auto;
@@ -45,7 +53,7 @@ button {
     text-align: center;
     font-family: Poppins;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 550;
     line-height: 1; /* 100% */
 }
 
@@ -494,11 +502,7 @@ button {
 }
 
 .services__title {
-    color: var(--primary-color);
     text-align: center;
-    font-family: Sora;
-    font-size: 5.2rem;
-    font-weight: 700;
     margin-bottom: 71px;
 }
 .services__list {
@@ -603,4 +607,68 @@ button {
     font-size: 1.6rem;
     font-weight: 550;
     line-height: 1;
+}
+
+/* member */
+
+.member {
+    padding: 130px 0;
+}
+
+.member__desc {
+    margin-bottom: 15px;
+    color: #5e6085;
+    text-align: center;
+    font-family: Sora;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.member__title {
+    text-align: center;
+    margin-bottom: 59px;
+}
+
+.member_list {
+    display: flex;
+    margin-left: 15px;
+    gap: 70px;
+}
+
+.member-image {
+    position: relative;
+}
+
+.member-image_decor {
+    position: absolute;
+    left: -15px;
+    bottom: 0;
+}
+
+.member-image_decor-top {
+    top: 30px;
+}
+
+.member-item_desc {
+    text-align: center;
+    margin: 29px 0 14px;
+}
+
+.member-item_name {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: Sora;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.member__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 48px auto;
+    width: 193px;
+    height: 56px;
 }

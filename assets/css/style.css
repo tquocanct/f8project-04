@@ -672,3 +672,142 @@ button {
     width: 193px;
     height: 56px;
 }
+
+/* pricing  */
+
+.pricing {
+    padding: 86px 0;
+}
+
+.pricing_title {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.pricing_desc {
+    margin: auto;
+    text-align: center;
+    width: 709px;
+    color: #656689;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87; /* 187.5% */
+}
+
+.pricing_time {
+    margin: 36px auto 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 276px;
+    height: 56px;
+    border-radius: 31px;
+    border: 1px solid #f8643c;
+    user-select: none;
+}
+
+.pricing_time span {
+    position: relative;
+    z-index: 1;
+    margin: auto 40px;
+    color: var(--sub-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.pricing_time::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 131px;
+    height: 56px;
+    border-radius: inherit;
+    background: var(--sub-color);
+}
+
+.pricing__input {
+    display: none;
+}
+
+.pricing__input:checked + .pricing_time::before {
+    right: auto;
+    left: 0;
+    width: 140px;
+}
+
+.pricing__input:not(:checked) + .pricing_time span:nth-child(2),
+.pricing__input:checked + .pricing_time span:first-child {
+    color: #fff;
+}
+
+.pricing_tag {
+    position: absolute;
+    top: -12px;
+    right: -115px;
+}
+
+.pricing__item {
+    width: 302px;
+    height: 465px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.pricing__item-content {
+    padding: 28px 30px;
+}
+
+.pricing__item-rank {
+    color: var(--sub-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+.pricing__item-sub-rank {
+    margin: 8px 0 24px;
+    color: #3f4065;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.pricing__item-price {
+    color: var(--primary-color);
+    font-family: Sora;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1.03; /* 103.03% */
+}
+
+.pricing__item-btn {
+    margin: 22px 0 24px;
+    width: 246px;
+    height: 44px;
+}
+
+.pricing__item-btn:hover {
+    background-color: var(--sub-color);
+    color: #fff;
+}
+
+.pricing__item-include {
+    margin-bottom: 18px;
+    display: flex;
+}
+
+.pricing__item-text {
+    margin-left: 12px;
+    color: var(--text--color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+
+.pricing__list {
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+}
